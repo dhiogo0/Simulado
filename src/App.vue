@@ -1,18 +1,27 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-  </div>
+  <v-app> 
+    <PrimeiraPagina/>
+    <Inicio/>
+    <img src="" alt="">
+  </v-app>
 </template>
 
 <script>
+import PrimeiraPagina from './components/PrimeiraPagina.vue'
+import Inicio from './components/inicio'
 
 export default {
   name: 'App',
+  components: { 
+    PrimeiraPagina,
+    Inicio
+  }
 }
 </script>
 
 <style>
-#app {
+#ap
+    PrimeiraPaginap {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
