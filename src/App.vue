@@ -1,6 +1,6 @@
 <template>
-  <v-app> 
-    <PrimeiraPagina/>
+  <v-app>
+    <AppTopBar/>
     <v-main>
       <router-view/>
     </v-main>
@@ -8,15 +8,14 @@
 </template>
 
 <script>
-import PrimeiraPagina from './components/Shared/PrimeiraPagina.vue'
+import AppTopBar from './components/Shared/AppTopBar'
 
 export default {
   name: 'App',
-  components: { 
-  PrimeiraPagina
-    
+  components: {
+    AppTopBar
   }
-}
+};
 </script>
 
 <style>
@@ -25,4 +24,3 @@ export default {
   text-decoration: none;
 }
 </style>
-

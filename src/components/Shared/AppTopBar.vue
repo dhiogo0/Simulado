@@ -1,5 +1,5 @@
 <template>
-    <div class="primeira-pagina">
+    <div class="App-Top-Bar">
         <v-app-bar
       color="green "
       dark
@@ -22,19 +22,23 @@
           v-model="group"
           active-class="green--text text--lighten-1"
         >
+        <router-link to="/">
           <v-list-item>
             <v-list-item-icon>
               <v-icon>mdi-home</v-icon>
             </v-list-item-icon>
             <v-list-item-title>Início</v-list-item-title>
           </v-list-item>
+        </router-link>
 
+          <router-link to="Classificacao">
           <v-list-item>
             <v-list-item-icon>
               <v-icon>mdi-soccer-field</v-icon>
             </v-list-item-icon>
             <v-list-item-title>Classificação</v-list-item-title>
           </v-list-item>
+          </router-link>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
@@ -43,7 +47,7 @@
 
 <script>
 export default {
-    name: 'PrimeiraPagina',
+    name: 'AppTopBar',
     data: () => ({
       drawer: false,
       group: null,
@@ -52,5 +56,7 @@ export default {
 </script>
 
 <style scoped>
-
+.App-Top-Bar a {
+  text-decoration: none;
+}
 </style>

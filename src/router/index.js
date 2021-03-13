@@ -1,22 +1,20 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import inicio from '../views/inicio.vue'
+import Inicio from '../views/Inicio.vue'
 import ClubesLista from '../views/ClubesLista.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
-  
   {
     path: '/',
-    name: 'inicio',
-    component: inicio
-    
+    name: 'Inicio',
+    component: Inicio
   },
   {
-  path: '/Classificacao',
-  name:  'Classificação',
-  component: ClubesLista
+    path: '/classificacao',
+    name: 'Classificação',
+    component: ClubesLista
   },
 ]
 
