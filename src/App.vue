@@ -1,32 +1,28 @@
 <template>
   <v-app> 
     <PrimeiraPagina/>
-    <Inicio/>
-    <img src="" alt="">
+    <v-main>
+      <router-view/>
+    </v-main>
   </v-app>
 </template>
 
 <script>
-import PrimeiraPagina from './components/PrimeiraPagina.vue'
-import Inicio from './components/inicio'
+import PrimeiraPagina from './components/Shared/PrimeiraPagina.vue'
 
 export default {
   name: 'App',
   components: { 
-    PrimeiraPagina,
-    Inicio
+  PrimeiraPagina
+    
   }
 }
 </script>
 
 <style>
-#ap
-    PrimeiraPaginap {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.link-home {
+  color: white !important;
+  text-decoration: none;
 }
 </style>
+
